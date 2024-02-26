@@ -267,68 +267,84 @@
         </header>
 
         <main class="row">
-            <div class="row text-center">
-                <div class="col-4">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Товар 1</h4>
+            <div class="col">
+                <div class="row text-center">
+                    <div class="col-4">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Товар 1</h4>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title pricing-card-title">$100</h2>
+                                <p>
+                                    10 users included,
+                                    2 GB of storage,
+                                    Email support,
+                                    Help center access
+                                </p>
+                                <button type="button" class="w-100 btn btn-lg btn-success">Купить</button>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h2 class="card-title pricing-card-title">$100</h2>
-                            <p>
-                                10 users included,
-                                2 GB of storage,
-                                Email support,
-                                Help center access
-                            </p>
+                    </div>
+                    <div class="col-4">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-body">
+                                <div class="mb-4">
+                                    <div class="row">
+                                        <div class="row text-start fw-light fst-italic">
+                                            <label for="inputName1" class="form-label">Введите Ваше имя</label>
+                                            <input type="text" class="form-control" id="inputName1">
 
-                            <form>
-                                <div class="mb-3">
-                                    <div class="row text-start fw-light fst-italic">
-                                        <label for="inputName1" class="form-label">Введите Ваше имя</label>
-                                        <input type="text" class="form-control" id="inputName1">
+                                            <label for="inputEmail1" class="form-label">Введите email-адрес</label>
+                                            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="mb-3">
-                                    <div class="row text-start fw-light fst-italic">
-                                        <label for="inputEmail1" class="form-label">Введите email-адрес</label>
-                                        <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+                                <button class="w-100 btn btn-lg btn-success">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="display fw-normal text-start">FAQ</h4>
+                            </div>
+                            <div class="card-body">
+
+                                <p class="d-inline-flex gap-4">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#collapseHowBuy" role="button" aria-expanded="false">
+                                        Как купить?
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#collapseHowDelivery" role="button" aria-expanded="false">
+                                        Как доставить?
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#collapseWhatGuarantee" role="button" aria-expanded="false">
+                                        Какая гарантия?
+                                    </button>
+                                </p>
+
+                                <div class="collapse" id="collapseHowBuy">
+                                    <div class="card card-body">
+                                        Заполните поля и нажмите кнопку "Купить".
                                     </div>
                                 </div>
-                            </form>
-                            <button type="button" class="w-100 btn btn-lg btn-success">Купить</button>
-                        </div>
-                    </div>
 
-
-                    <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#collapseHowBuy" role="button" aria-expanded="false">
-                        Как купить?
-                    </button>
-                    <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#collapseHowDelivery" role="button" aria-expanded="false">
-                        Как доставить?
-                    </button>
-                    <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#collapseWhatGuarantee" role="button" aria-expanded="false">
-                        Какая гарантия?
-                    </button>
-
-                    <div class="collapse" id="collapseHowBuy">
-                        <div class="card card-body">
-                            Заполните поля и нажмите кнопку "Купить".
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseHowDelivery">
-                        <div class="card card-body">
-                            Вы можете связаться с нашей службой по доставке.
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseWhatGuarantee">
-                        <div class="card card-body">
-                            Гаранития 1 год со дня покупки.
+                                <div class="collapse" id="collapseHowDelivery">
+                                    <div class="card card-body">
+                                        Вы можете связаться с нашей службой по доставке.
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapseWhatGuarantee">
+                                    <div class="card card-body">
+                                        Гаранития 1 год со дня покупки.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </main>
     </div>
 
